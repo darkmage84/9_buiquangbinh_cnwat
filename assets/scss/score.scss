@@ -13,6 +13,7 @@ ul {
   width: 1200px;
   margin: 0 auto;
   background-color: #e0ded577;
+  padding-bottom: 60px;
 }
 
 .header {
@@ -58,7 +59,7 @@ ul {
   text-align: center;
   line-height: 12px;
   h1 {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
   }
 }
@@ -77,4 +78,13 @@ ul {
 
 .score {
   text-align: center;
+  padding: 0 20px;
+
+  h2 {
+    font-weight: 500;
+  }
+
+  .name {
+    text-align: start;
+  }
 }
