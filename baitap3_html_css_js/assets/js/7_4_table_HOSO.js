@@ -1,19 +1,18 @@
-const profileForm = document.getElementById("profile-form");
+var profileForm = document.getElementById("profile-form");
 
-profileForm.addEventListener("submit", function (event) {
-  event.preventDefault();
+profileForm.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-  const name = document.getElementById("name").value;
-  const age = document.getElementById("age").value;
-  const address = document.getElementById("address").value;
+  var code = document.getElementById("code").value;
+  var name = document.getElementById("name").value;
+  var address = document.getElementById("address").value;
+  var clas = document.getElementById("class").value;
 
-  if (!name || !age || !address) {
+  if (!code || !name || !address || !clas) {
     alert("Vui lòng nhập đầy đủ thông tin.");
     return;
   }
 
-  // Lưu hồ sơ vào bảng hoặc thực hiện xử lý khác tùy theo yêu cầu.
-
-  alert("Hồ sơ đã được lưu thành công!");
+  alert("Hồ sơ đã được lưu!");
   profileForm.reset();
 });

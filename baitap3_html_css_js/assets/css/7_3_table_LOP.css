@@ -18,42 +18,37 @@ ol {
 /* end: reset css */
 
 /* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&display=swap");
 /* end: import fonts */
 
 /* main */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-form {
+.class-form {
   width: 300px;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-label {
-  display: block;
-  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
 }
 
 input {
   width: 100%;
-  padding: 5px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  padding: 6px;
+  margin: 4px 0px 12px 0px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
-button {
-  display: block;
+.btn {
   width: 100%;
   padding: 8px;
-  margin-top: 15px;
-  background-color: #007bff;
+  margin-top: 16px;
+  background-color: #005ca4;
   color: white;
   border: none;
-  border-radius: 3px;
+  border-radius: 8px;
   cursor: pointer;
 }

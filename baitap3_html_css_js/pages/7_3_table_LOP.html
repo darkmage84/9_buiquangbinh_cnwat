@@ -7,19 +7,52 @@
     <link rel="stylesheet" href="../assets/css/7_3_table_LOP.css" />
   </head>
   <body>
-    <form id="class-form">
-      <label for="class-name">Tên lớp:</label>
-      <input type="text" id="class-name" name="class-name" required />
+    <div class="wrapper">
+      <div class="wrapper-inner">
+        <div class="form-table-class">
+          <form class="class-form" id="class-form">
+            <label for="class-code">Mã lớp: </label>
+            <input
+              type="text"
+              name="class-code"
+              id="class-code"
+              placeholder="Ex: AT3CN-1-23"
+              required
+            />
 
-      <label for="class-code">Mã lớp:</label>
-      <input type="text" id="class-code" name="class-code" required />
+            <label for="class-name">Tên lớp: </label>
+            <input
+              type="text"
+              name="class-name"
+              id="class-name"
+              placeholder="Ex: AT17E-KN01"
+              required
+            />
 
-      <label for="teacher">Giáo viên chủ nhiệm:</label>
-      <input type="text" id="teacher" name="teacher" required />
+            <label for="class-course">Khóa học: </label>
+            <input
+              type="number"
+              name="class-course"
+              id="class-course"
+              placeholder="Ex: 01"
+              required
+            />
 
-      <button type="submit">Thêm lớp</button>
-    </form>
+            <label for="class-teacher">Giáo viên chủ nhiệm: </label>
+            <input
+              type="text"
+              name="class-teacher"
+              id="class-teacher"
+              placeholder="Ex: Nguyễn Văn A .."
+              required
+            />
 
+            <button type="submit" class="btn">Add</button>
+          </form>
+        </div>
+        <!-- end /.form-table-class -->
+      </div>
+    </div>
     <!-- scripts -->
     <script src="../assets/js/7_3_table_LOP.js"></script>
   </body>

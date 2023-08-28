@@ -7,20 +7,114 @@
     <link rel="stylesheet" href="../assets/css/7_4_table_HOSO.css" />
   </head>
   <body>
-    <form id="profile-form">
-      <label for="name">Tên:</label>
-      <input type="text" id="name" name="name" required />
+    <div class="wrapper">
+      <div class="wrapper-inner">
+        <!-- start /.form-table-profile -->
+        <div class="form-table-profile">
+          <form class="profile-form" id="profile-form">
+            <div class="field-infor">
+              <div class="profile-form-left">
+                <div class="code-sv">
+                  <label for="code">Mã sinh viên: </label>
+                  <input
+                    type="text"
+                    name="code"
+                    id="code"
+                    placeholder="Ex: AT170505 .."
+                    required
+                  />
+                </div>
 
-      <label for="age">Tuổi:</label>
-      <input type="number" id="age" name="age" min="1" required />
+                <div class="name-sv">
+                  <label for="name">Họ và tên: </label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Ex: Nguyễn Văn A .."
+                    required
+                  />
+                </div>
 
-      <label for="address">Địa chỉ:</label>
-      <input type="text" id="address" name="address" required />
+                <div class="birthday-sv">
+                  <label for="date-of-birth">Ngày sinh: </label>
+                  <input
+                    type="date"
+                    name="date-of-birth"
+                    id="date-of-birth"
+                    required
+                  />
+                </div>
 
-      <button type="submit">Lưu hồ sơ</button>
+                <div class="address-sv">
+                  <label for="address">Địa chỉ: </label>
+                  <input
+                    type="text"
+                    name="address"
+                    id="address"
+                    placeholder="Ex: Hải Dương .."
+                    required
+                  />
+                </div>
+              </div>
+              <!-- end /.profile-form-left -->
 
-      <!-- scripts -->
-      <script src="../assets/js/7_4_table_LOP.js"></script>
-    </form>
+              <div class="profile-form-right">
+                <div class="class-sv">
+                  <label for="class">Lớp: </label>
+                  <input
+                    type="text"
+                    name="class"
+                    id="class"
+                    placeholder="Ex: AT17E-KN .."
+                    required
+                  />
+                </div>
+
+                <div class="math-sv">
+                  <label for="math-point">Điểm toán: </label>
+                  <input
+                    type="number"
+                    name="math-point"
+                    id="math-point"
+                    placeholder="Ex: 8.0 .."
+                    required
+                  />
+                </div>
+
+                <div class="physics-sv">
+                  <label for="physics-point">Điểm lý: </label>
+                  <input
+                    type="number"
+                    name="physics-point"
+                    id="physics-point"
+                    placeholder="Ex: 8.0 .."
+                    required
+                  />
+                </div>
+
+                <div class="chemistry-sv">
+                  <label for="chemistry-point">Điểm hóa: </label>
+                  <input
+                    type="number"
+                    name="chemistry-point"
+                    id="chemistry-point"
+                    placeholder="Ex: 8.0 .."
+                    required
+                  />
+                </div>
+              </div>
+              <!-- end /.profile-form-right -->
+            </div>
+
+            <button type="submit" class="btn">Add</button>
+          </form>
+        </div>
+        <!-- end /.form-table-profile -->
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="../assets/js/7_4_table_LOP.js"></script>
   </body>
 </html>

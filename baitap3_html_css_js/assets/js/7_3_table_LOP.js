@@ -1,19 +1,17 @@
-const classForm = document.getElementById("class-form");
+var classForm = document.getElementById("class-form");
 
-classForm.addEventListener("submit", function (event) {
-  event.preventDefault();
+classForm.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-  const className = document.getElementById("class-name").value;
-  const classCode = document.getElementById("class-code").value;
-  const teacher = document.getElementById("teacher").value;
+  var classCode = document.getElementById("class-code").value;
+  var className = document.getElementById("class-name").value;
+  var classTeacher = document.getElementById("class-teacher").value;
 
-  if (!className || !classCode || !teacher) {
-    alert("Vui lòng nhập đầy đủ thông tin.");
+  if (!className || !classCode || !classTeacher) {
+    alert("Vui lòng nhập đầy đủ thông tin!");
     return;
   }
 
-  // Thêm mã lớp vào bảng hoặc thực hiện xử lý khác tùy theo yêu cầu.
-
-  alert("Lớp đã được thêm thành công!");
+  alert("Lớp học đã được thêm!");
   classForm.reset();
 });
