@@ -4,10 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Nhập</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../assets/css/7_5_form_nhap.css" />
   </head>
   <body>
+    <div class="wrapper">
+      <div class="wrapper-inner">
+        <div class="form-insert-content">
+          <form class="insert-form" id="insert-form">
+            <label for="name">Họ và tên: </label>
+            <input type="text" name="name" id="name" class="required" />
+            <br />
+
+            <label for="address">Địa chỉ: </label>
+            <input type="text" name="address" id="address" />
+            <br />
+
+            <label for="gender">Giới tính: </label>
+            <input type="radio" name="gender" id="male" value="male" />
+            <label for="male">Nam</label>
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="female">Nữ</label>
+            <br />
+
+            <label for="birthday">Ngày sinh: </label>
+            <input type="text" name="birthday" id="birthday" class="required" />
+            <br />
+
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="email" class="required" />
+            <br />
+
+            <label for="phone">Điện thoại: </label>
+            <input type="text" name="phone" id="phone" />
+            <br />
+
+            <label for="course">Khóa đăng ký: </label>
+            <input type="checkbox" name="course" id="english" value="english" />
+            <label for="english">Tiếng Anh</label>
+            <input
+              type="checkbox"
+              name="course"
+              id="administration"
+              value="administration"
+            />
+            <label for="administration">Quản trị</label>
+            <input type="checkbox" name="course" id="cntt" value="cntt" />
+            <label for="cntt">CNTT</label>
+            <br />
+
+            <label for="user">Tên sử dụng: </label>
+            <input type="text" name="user" id="user" class="required" />
+            <br />
+
+            <label for="password">Mật khẩu: </label>
+            <input type="text" name="password" id="password" class="required" />
+            <br />
+
+            <label for="re-password">Nhập lại mật khẩu: </label>
+            <input
+              type="text"
+              name="re-password"
+              id="re-password"
+              class="required"
+            />
+            <br />
+
+            <p>Ghi chú:</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <br />
+
+            <button type="submit" class="btn-accept">Chấp nhận</button>
+            <button type="submit" class="btn-reject">Bỏ qua</button>
+          </form>
+        </div>
+        <!-- end /.form-insert-content -->
+      </div>
+    </div>
     <!-- Scripts -->
-    <script src=""></script>
+    <script src="../assets/js/7_5_form_nhap.js"></script>
   </body>
 </html>

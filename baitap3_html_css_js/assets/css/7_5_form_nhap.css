@@ -1,0 +1,59 @@
+/* reset css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+/* end: reset css */
+
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&display=swap");
+/* end: import fonts */
+
+/* main */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.insert-form {
+  width: 600px;
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+input[type="text"] {
+  width: 200px;
+  padding: 6px;
+  margin: 4px 0px 14px 0px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input.required {
+  background: #2d73a9a7;
+  border: 1px solid gray;
+}
+
+.btn {
+  width: 100%;
+  padding: 8px;
+  margin-top: 16px;
+  background-color: #005ca4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
